@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=League+Spartan&family=Playfair+Display&family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  background-color: #3a4764;
+}
+
+.calculator-header {
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.calculator-header .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 0 auto;
+}
+
+.calculator-header .inner-text {
+  font-size: 12px;
+}
+
+.calculator-header .inner-heading {
+  font-size: 24px;
+}
+
+.header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-inner .inner-text {
+  margin-right: 20px;
+}
+
+.inner-track {
+  width: 60px;
+  height: 24px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #232c43;
+}
+
+.inner-track .track-btn {
+  border: none;
+  outline: none;
+  background: #93261a;
+  width: 16px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.calculator-wrapper {
+  position: relative;
+}
+
+.input-container {
+  height: 6.25rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: #182034;
+}
+
+.input-element {
+  width: 100%;
+  height: 80%;
+  outline: none;
+  border: none;
+  font: inherit;
+  font-size: 32px;
+  color: white;
+  text-align: right;
+  background: #182034;
+}
+
+.btn-container {
+  padding: 1rem;
+  margin-top: 1.5rem;
+  width: 405px;
+  border-radius: 10px;
+  background-color: #232c43;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (5rem)[4];
+      grid-template-columns: repeat(4, 5rem);
+  -ms-grid-rows: (3rem)[5];
+      grid-template-rows: repeat(5, 3rem);
+  gap: 1rem;
+}
+
+.Btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 32px;
+  background-color: #d9ccbf;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 0 #a69d91;
+          box-shadow: 0 3px 0 #a69d91;
+  cursor: pointer;
+}
+
+.Btn:hover {
+  background-color: #ece6df;
+  -webkit-transition: linear 0.2s;
+  transition: linear 0.2s;
+}
+
+.btn-delete {
+  padding-top: 0.5rem;
+  background-color: #3a4764;
+  -webkit-box-shadow: 0 3px 0 #404e72;
+          box-shadow: 0 3px 0 #404e72;
+}
+
+.btn-delete:hover {
+  background-color: #637097;
+  -webkit-transition: linear 0.2s;
+  transition: linear 0.2s;
+}
+
+.btn-reset {
+  padding-top: 0.2em;
+  background-color: #3a4764;
+  -webkit-box-shadow: 0 3px 0 #404e72;
+          box-shadow: 0 3px 0 #404e72;
+  grid-column: span 2;
+}
+
+.btn-reset:hover {
+  background-color: #637097;
+  -webkit-transition: linear 0.2s;
+  transition: linear 0.2s;
+}
+
+.btn-equality {
+  background-color: #ad2d1f;
+  -webkit-box-shadow: 0 3px 0 #822217;
+          box-shadow: 0 3px 0 #822217;
+  grid-column: span 2;
+}
+
+.btn-equality:hover {
+  background-color: #d03f2f;
+  -webkit-transition: linear 0.2s;
+  transition: linear 0.2s;
+}
+/*# sourceMappingURL=style.css.map */

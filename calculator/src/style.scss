@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=League+Spartan&family=Playfair+Display&family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  background-color: hsl(222, 26%, 31%);
+}
+
+.calculator-header {
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  display: flex;
+  align-items: center;
+  color: hsl(0, 0, 100%);
+
+  & .header-inner {
+    display: flex;
+    margin: 0 0 0 auto;
+  }
+
+  & .inner-text {
+    font-size: 12px;
+  }
+
+  & .inner-heading {
+    font-size: 24px;
+  }
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+
+  & .inner-text {
+    margin-right: 20px;
+  }
+}
+
+.inner-track {
+  width: 60px;
+  height: 24px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  background: hsl(223, 31%, 20%);
+
+  & .track-btn {
+    border: none;
+    outline: none;
+    background: hsl(6, 70%, 34%);
+    width: 16px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+}
+
+.calculator-wrapper {
+  position: relative;
+}
+
+.input-container {
+  height: 6.25rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background-color: hsl(224, 36%, 15%);
+}
+
+.input-element {
+  width: 100%;
+  height: 80%;
+  outline: none;
+  border: none;
+  font: inherit;
+  font-size: 32px;
+  color: hsl(0, 0, 100%);
+  text-align: right;
+  background: hsl(224, 36%, 15%);
+}
+
+.btn-container {
+  padding: 1rem;
+  margin-top: 1.5rem;
+  width: 405px;
+  border-radius: 10px;
+  background-color: hsl(223, 31%, 20%);
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: repeat(5, 3rem);
+  gap: 1rem;
+}
+
+.Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  background-color: hsl(30, 25%, 80%);
+  border-radius: 10px;
+  box-shadow: 0 3px 0 hsl(35, 11%, 61%);
+  cursor: pointer;
+
+  &:hover {
+    background-color: hsl(30, 25%, 90%);
+    transition: linear 0.2s;
+  }
+}
+
+.btn-delete {
+  padding-top: 0.5rem;
+  background-color: hsl(222, 26%, 31%);
+  box-shadow: 0 3px 0 hsl(224, 28%, 35%);
+  &:hover {
+    background-color: hsl(225, 21%, 49%);
+    transition: linear 0.2s;
+  }
+}
+
+.btn-reset {
+  padding-top: 0.2em;
+  background-color: hsl(222, 26%, 31%);
+  box-shadow: 0 3px 0 hsl(224, 28%, 35%);
+  grid-column: span 2;
+  &:hover {
+    background-color: hsl(225, 21%, 49%);
+    transition: linear 0.2s;
+  }
+}
+
+.btn-equality {
+  background-color: hsl(6, 70%, 40%);
+  box-shadow: 0 3px 0 hsl(6, 70%, 30%);
+  grid-column: span 2;
+  &:hover {
+    background-color: hsl(6, 63%, 50%);
+    transition: linear 0.2s;
+  }
+}
