@@ -90,9 +90,18 @@
   padding: 1rem;
   width: 100%;
   border-radius: 10px;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+  color: white;
+  font-size: 3rem;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #182034;
 }
 
