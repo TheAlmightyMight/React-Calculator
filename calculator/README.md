@@ -1,4 +1,4 @@
-A calculator built with React. No third party libraries added.
+<h1> A calculator built with React. No third party libraries added </h1>
 
 Goals: 
 <ul>
