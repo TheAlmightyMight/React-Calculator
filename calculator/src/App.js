@@ -93,7 +93,6 @@ export function reducer(state, { type, payload }) {
         previousOperand: null,
         operation: null,
         currentOperand: evaluate(state),
-        // result: evaluate(state),
       };
     default:
       return state;
@@ -130,7 +129,7 @@ const INTEGER_FORMATTER = new Intl.NumberFormat("en-us", {
 });
 function formatOperand(operand) {
   if (operand == null) return;
-  const [integer, decimal] = String(operand).split("."); // not itrable for some reason
+  const [integer, decimal] = String(operand).split(".");
   if (decimal == null) return INTEGER_FORMATTER.format(integer);
   return `${INTEGER_FORMATTER.format(integer)}.${decimal}`;
 }
